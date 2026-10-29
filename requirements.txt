@@ -1,0 +1,19 @@
+# 🦓 Zebra SMS Bot — Python dependencies
+# Install:  pip install -r requirements.txt
+# Upgrade:  pip install -U -r requirements.txt
+# Python 3.10+ recommended (tested on Python 3.12.8)
+
+# Telegram Bot framework — v21.7+ REQUIRED (Zebra_SMS_Bot.py uses CopyTextButton, added in PTB 21.7)
+python-telegram-bot>=21.7
+
+# Async HTTP client — Zebra panel API + Telegram getMe calls
+httpx>=0.25.2
+
+# 2FA TOTP code generation (GET 2FA CODE feature)
+pyotp>=2.9.0
+
+# MongoDB hybrid database (Main.py — users/balance/OTP stats)
+pymongo>=4.6.1
+
+# Keep-alive web server (Main.py — 24/7 hosting on Render/Replit etc.)
+Flask>=3.0.0
